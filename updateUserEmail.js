@@ -1,5 +1,5 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("./serviceKey.json");
+const serviceAccount = require("./serviceKey.json"); //check LastPass for the serviceKey.json file
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
